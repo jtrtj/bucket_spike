@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @thing.title %>
+</p>
+
+<%= image_tag(@thing.image, style:'width:100%') %>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @thing.artist %>
+</p>
+
+<%= link_to 'Edit', edit_thing_path(@thing) %> |
+<%= link_to 'Back', things_path %>
